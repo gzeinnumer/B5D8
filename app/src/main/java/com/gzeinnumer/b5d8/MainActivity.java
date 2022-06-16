@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ProductInsertResponse> call, Throwable t) {
-
+                Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
